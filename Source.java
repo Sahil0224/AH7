@@ -10,8 +10,19 @@ class Node<T> {
 
 class Source {
   public static int sumList(Node<Integer> head) {
-    // todo
-    return;
+    // Initialize a variable to store the sum
+    int sum = 0;
+
+    // loop through while head is not null
+    while(head != null)
+    {
+      // add the value of the current node to sum
+      sum = sum + head.val;
+      // move to the next node
+      head = head.next; 
+    }
+    // return the total sum
+    return sum;
   }
 
   public static void main(String[] args) {
